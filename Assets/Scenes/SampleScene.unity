@@ -623,14 +623,9 @@ MonoBehaviour:
   - {fileID: 1164147830399643011, guid: a3be684ba2d5c94479d6847b5dbf5597, type: 3}
   - {fileID: 1762943705606778937, guid: d504242da3e5e304fb631b13df310720, type: 3}
   - {fileID: 4426489038090280053, guid: 97dd75be5c7285042a32151b4511677f, type: 3}
-  createKnife: {fileID: 1164147830399643011, guid: a3be684ba2d5c94479d6847b5dbf5597,
-    type: 3}
-  createAxe: {fileID: 485366762184210931, guid: e2ef1c2e2841f4443ab137acb462d02b,
-    type: 3}
-  createSlime: {fileID: 4426489038090280053, guid: 97dd75be5c7285042a32151b4511677f,
-    type: 3}
   rangeA: {fileID: 1967473425}
   rangeB: {fileID: 2026716754}
+  destoryTime: 20
 --- !u!4 &434999527
 Transform:
   m_ObjectHideFlags: 0
