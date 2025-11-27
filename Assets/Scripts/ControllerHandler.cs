@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class ControllerHandler : MonoBehaviour
 {
-    private List<InputDevice> joinDevices = new List<InputDevice>();
+    public List<InputDevice> joinDevices = new List<InputDevice>();
     public GameObject PlayerObject = null;
 
     //1.　ゲーム開始時に接続されているコントローラーを変数joinDevicesに格納
