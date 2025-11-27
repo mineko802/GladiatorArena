@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+    public float MoveSpeed = 0.1f;
     //プレイヤーの入力を受け取るための関数
     private void OnMove(InputValue value)
     {
@@ -12,10 +13,14 @@ public class PlayerMove : MonoBehaviour
         Vector2 axis = value.Get<Vector2>();
 
         //自身のPositionを変数に保持（現在位置の記録）
-        Vector2 PlayerVector = this.transform.position;
+        Vector3 PlayerVector = this.transform.position;
+
+        Vector3 updatePlayerPosition = new Vector3(
+           PlayerVector.x + axis.x * MoveSpeed,
+           PlayerVector.y,
+           PlayerVector.z + axis.y * MoveSpeed);
 
         //記録した位置に入力された値を加算して新しい位置を計算
-        PlayerVector += axis;
-        this.transform.position = axis;
+        this.transform.position = updatePlayerPosition;
     }
 }
