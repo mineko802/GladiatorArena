@@ -14,7 +14,7 @@ public class CreateRangeRandomPosition : MonoBehaviour
     [SerializeField]
     [Tooltip("生成する範囲B")]
     private Transform rangeB;
-    [SerializeField]private int destoryTime = 20;
+    [SerializeField]private int destoryTime = 40;
     // 経過時間
     private float time;
     // Update is called once per frame

@@ -488,7 +488,7 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 23d9dcbb5910fb64bbe46c77f7934614, type: 3}
   rangeA: {fileID: 1967473425}
   rangeB: {fileID: 2026716754}
-  destoryTime: 20
+  destoryTime: 40
 --- !u!4 &434999527
 Transform:
   m_ObjectHideFlags: 0
