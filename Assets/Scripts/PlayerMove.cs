@@ -77,7 +77,7 @@ public class PlayerMove : MonoBehaviour
 
             // 操作入力からy軸周りの目標角度[deg]を計算
             var targetAngleY = -Mathf.Atan2(_inputMove.y, _inputMove.x)
-                * Mathf.Rad2Deg + 60;
+                * Mathf.Rad2Deg + 10;
 
             // イージングしながら次の回転角度[deg]を計算
             var angleY = Mathf.SmoothDampAngle(
