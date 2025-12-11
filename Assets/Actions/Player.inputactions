@@ -24,15 +24,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Collect",
-                    "type": "Button",
-                    "id": "1162c0ed-e196-4f70-a035-30b17aefdbe5",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Attack",
                     "type": "Button",
                     "id": "dbe62392-15b9-43a9-b819-9c16d84fbde4",
@@ -71,17 +62,6 @@
                     "processors": "InvertVector2(invertX=false),ScaleVector2(x=0.3,y=0.2)",
                     "groups": ";Gamepad",
                     "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8255d333-5683-4943-a58a-ccb207ff1dce",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Collect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

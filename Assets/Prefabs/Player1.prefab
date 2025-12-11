@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1401046685830934470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 1, z: -5}
+  m_LocalPosition: {x: 0.22999954, y: 1.8600001, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65,7 +65,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.5
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -205,8 +205,9 @@ GameObject:
   - component: {fileID: 5950416530165258681}
   - component: {fileID: 1910856986083536070}
   - component: {fileID: 1660590650245337540}
+  - component: {fileID: 5918837776282868416}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,22 +351,6 @@ MonoBehaviour:
     m_ActionId: f5c5a1e4-e980-4bd5-b574-2744ac4be6d0
     m_ActionName: Player/Look[/XInputControllerWindows/rightStick]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1660590650245337540}
-        m_TargetAssemblyTypeName: CollectItem, Assembly-CSharp
-        m_MethodName: OnCollect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1162c0ed-e196-4f70-a035-30b17aefdbe5
-    m_ActionName: Player/Collect[/XInputControllerWindows/buttonEast]
-  - m_PersistentCalls:
       m_Calls: []
     m_ActionId: dbe62392-15b9-43a9-b819-9c16d84fbde4
     m_ActionName: Player/Attack[/XInputControllerWindows/buttonEast]
@@ -468,7 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7f8370cab84894f840b7d420e9fbf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 3
+  MoveSpeed: 6
   JumpSpeed: 7
   Gravity: 15
   FallSpeed: 10
@@ -485,6 +470,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e02827566f8888d42b94b0a05166124d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectAction:
+    m_Name: Collect
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c7fe4fc2-083d-45f7-b259-035a53db78fb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e7290269-5c4e-4b1c-86be-d514f7543124
+      m_Path: <Gamepad>/buttonNorth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Collect
+      m_Flags: 0
+    m_Flags: 0
+  currentCollectible: {fileID: 5918837776282868416}
+--- !u!135 &5918837776282868416
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5558295731571715404}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6351492112779726940
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +685,7 @@ Transform:
   m_GameObject: {fileID: 7090813157918071702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 1, z: 0}
+  m_LocalPosition: {x: 0.23, y: 1.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -693,7 +717,7 @@ Transform:
   m_GameObject: {fileID: 7656994491761357973}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 1, z: -5}
+  m_LocalPosition: {x: 0.22999954, y: 1.8600001, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

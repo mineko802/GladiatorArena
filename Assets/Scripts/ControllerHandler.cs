@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 public class ControllerHandler : MonoBehaviour
 {
     public List<InputDevice> joinDevices = new List<InputDevice>();
-    public GameObject PlayerObject = null;
+    public List<GameObject> PlayerObject = new List<GameObject>();
+    private int playerCount = 0;
 
     //1.　ゲーム開始時に接続されているコントローラーを変数joinDevicesに格納
     //3.  作ったオブジェクトをコントローラーと接続する
@@ -22,6 +23,7 @@ public class ControllerHandler : MonoBehaviour
 
                 //変数joinDevicesにデバイス情報を追加
                 joinDevices.Add(device);
+                playerCount++;
             }
         }
         JoinPlayer();
@@ -33,7 +35,7 @@ public class ControllerHandler : MonoBehaviour
         foreach (var device in joinDevices)
         {
             //PlayerObjectを生成
-            PlayerInput.Instantiate(PlayerObject, pairWithDevice: device);
+            PlayerInput.Instantiate(PlayerObject[playerCount-1], pairWithDevice: device);
         }
     }
 }

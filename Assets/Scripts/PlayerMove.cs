@@ -71,13 +71,13 @@ public class PlayerMove : MonoBehaviour
         // CharacterControllerに移動量を指定し、オブジェクトを動かす
         _characterController.Move(moveDelta);
 
-        if (_inputMove != Vector2.zero)
+        /*if (_inputMove != Vector2.zero)
         {
             // 移動入力がある場合は、振り向き動作も行う
 
             // 操作入力からy軸周りの目標角度[deg]を計算
             var targetAngleY = -Mathf.Atan2(_inputMove.y, _inputMove.x)
-                * Mathf.Rad2Deg + 10;
+                * Mathf.Rad2Deg + 1;
 
             // イージングしながら次の回転角度[deg]を計算
             var angleY = Mathf.SmoothDampAngle(
@@ -89,6 +89,6 @@ public class PlayerMove : MonoBehaviour
 
             // オブジェクトの回転を更新
             _transform.rotation = Quaternion.Euler(0, angleY, 0);
-        }
+        }*/
     }
 }
