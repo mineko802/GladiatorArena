@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameStart : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
     // Update is called once per frame
     public void OnClick()
     {
-            SceneManager.LoadScene("Matching Scenes");
+            SceneManager.LoadScene("Tutorial Scenes");
     }
 }
