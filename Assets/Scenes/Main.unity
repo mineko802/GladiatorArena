@@ -969,8 +969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerObject:
-  - {fileID: 5558295731571715404, guid: 75f2eb7c18022c546a2b6cd32735c08c, type: 3}
-  - {fileID: 5558295731571715404, guid: fec94107c4e74c647842e6e1894292db, type: 3}
+  - {fileID: 4784733627193103756, guid: 8c1491070f4a8aa4594d9116dbe164f2, type: 3}
+  - {fileID: 4784733627193103756, guid: 160fdd92225b6464a9280156be7e7811, type: 3}
 --- !u!1001 &2370709987851076824
 PrefabInstance:
   m_ObjectHideFlags: 0
