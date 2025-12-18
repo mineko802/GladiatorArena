@@ -8,6 +8,7 @@ public class ControllerHandler : MonoBehaviour
     public List<InputDevice> joinDevices = new List<InputDevice>();
     public List<GameObject> PlayerObject = new List<GameObject>();
     private int playerCount = 0;
+    private int d = 0;
 
     //1.　ゲーム開始時に接続されているコントローラーを変数joinDevicesに格納
     //3.  作ったオブジェクトをコントローラーと接続する
@@ -34,8 +35,11 @@ public class ControllerHandler : MonoBehaviour
         //変数joinDevicesの数だけプレイヤーオブジェクトを生成
         foreach (var device in joinDevices)
         {
+            d++;
+            PlayerInput.Instantiate(PlayerObject[d-1], pairWithDevice: device);
+            
             //PlayerObjectを生成
-            PlayerInput.Instantiate(PlayerObject[playerCount-1], pairWithDevice: device);
+           
         }
     }
 }

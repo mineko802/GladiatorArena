@@ -970,7 +970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerObject:
   - {fileID: 4784733627193103756, guid: 8c1491070f4a8aa4594d9116dbe164f2, type: 3}
-  - {fileID: 4784733627193103756, guid: 160fdd92225b6464a9280156be7e7811, type: 3}
+  - {fileID: 4784733627193103756, guid: 9f1d21c522ec091489ab9a08f972b67f, type: 3}
 --- !u!1001 &2370709987851076824
 PrefabInstance:
   m_ObjectHideFlags: 0
